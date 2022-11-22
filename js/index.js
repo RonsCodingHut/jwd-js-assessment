@@ -98,14 +98,20 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       }
     })
-    console.log(score);
+    score.innerHTML = `Your score is: ${score}/5`
   };
 
   const countDown = () => {
     let seconds = 60;
     let timer = setInterval(myTimer, 1000)
     function myTime(){
-      document.getElementById("time").innerHTML = `Seconds remaining ${seconds}`
+      document.getElementById("time").innerHTML = `Seconds remaining: ${seconds}`
+      seconds--
+      if (seconds === -1){
+        clearInterval(timer)
+        calculateScore()
+        alert(`Time's up!!`)
+      }
     }
   }
 
@@ -117,5 +123,5 @@ window.addEventListener('DOMContentLoaded', () => {
   resetButton.addEventListener("click", ()=>resetPage());
 
   // call the displayQuiz function
-  displayQuiz()
+  displayQuiz();
 });
