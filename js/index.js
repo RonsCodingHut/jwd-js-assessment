@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const calculateScore = () => {
     let score = 0;
     quizArray.map((quizItem, index) => {
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 6; i++) {
         //highlight the li if it is the correct answer
         let li = `li_${index}_${i}`;
         let r = `radio_${index}_${i}`;
@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (radioElement.checked) {
           if(quizItem.a == i) {
             score++
-            liElement.style.backgroundColor = "lightGreen" //change background color of li element here
+            liElement.style.backgroundColor = "lightGreen"
           } else {
             liElement.style.backgroundColor = "red"
           }
