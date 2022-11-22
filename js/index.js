@@ -84,16 +84,21 @@ window.addEventListener('DOMContentLoaded', () => {
         liElement = document.querySelector('#' + li);
         radioElement = document.querySelector('#' + r);
 
-        if (quizItem.a == i) {
-          //change background color of li element here
-        }
-
         if (radioElement.checked) {
-          // code for task 1 goes here
+          if(quizItem.a == i) {
+            score++
+            liElement.style.backgroundColor = "lightGreen" //change background color of li element here
+          } else {
+            liElement.style.backgroundColor = "red"
+          }
+          }
         }
       }
-    });
+    })
+    console.log(score);
   };
+
+  submitButton.addEventListener("click", ()=>calculateScore())
 
   // call the displayQuiz function
   displayQuiz();
