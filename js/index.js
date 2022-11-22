@@ -43,12 +43,12 @@ window.addEventListener('DOMContentLoaded', () => {
       q: 'What is the capital of Australia?',
       o: ['Sydney', 'Canberra', 'Melbourne', 'Perth'],
       a: 1,
-    }
+    },
     {
       q: 'Which of these countries was NEVER part of the British Empire?',
       o: ['Thailand', 'Kenya', 'New Zealand', 'Ireland'],
       a: 1,
-    }
+    },
     {
       q: 'Which of these countries is NOT one of the top 20 oil producers?',
       o: ['Norway', 'United States', 'Morocco', 'Iraq'],
