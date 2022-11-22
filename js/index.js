@@ -114,8 +114,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   submitButton.addEventListener("click", ()=>calculateScore());
-  resetButton.addEventListener("click"), ()=>resetPage());
+  resetButton.addEventListener("click", ()=>resetPage());
 
   // call the displayQuiz function
-  displayQuiz();
-
+  displayQuiz()
+});
