@@ -101,8 +101,12 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log(score);
   };
 
+  const resetPage = () => {
+    window.location.reload();
+  }
 
-  submitButton.addEventListener("click", ()=>calculateScore())
+  submitButton.addEventListener("click", ()=>calculateScore());
+  resetButton.addEventListener("click"), ()=>resetPage())
 
   // call the displayQuiz function
   displayQuiz();
