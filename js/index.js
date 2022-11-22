@@ -93,18 +93,16 @@ window.addEventListener('DOMContentLoaded', () => {
             score++
             liElement.style.backgroundColor = "lightGreen"
           } else {
-            liElement.style.backgroundColor = "red"
-          }
+            liElement.style.backgroundColor = "yellow"
           }
         }
       }
     })
     console.log(score);
-
+  };
 
 
   submitButton.addEventListener("click", ()=>calculateScore())
 
   // call the displayQuiz function
-  displayQuiz();
-
+  displayQuiz(); 
