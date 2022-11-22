@@ -105,4 +105,5 @@ window.addEventListener('DOMContentLoaded', () => {
   submitButton.addEventListener("click", ()=>calculateScore())
 
   // call the displayQuiz function
-  displayQuiz(); 
+  displayQuiz();
+});
