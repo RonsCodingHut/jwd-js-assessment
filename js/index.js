@@ -24,7 +24,11 @@ window.addEventListener('DOMContentLoaded', () => {
   start.addEventListener('click', function (e) {
     document.querySelector('#quizBlock').style.display = 'block';
     start.style.display = 'none';
+    countDown();
   });
+  const submitButton = document.getElementById("btnSumit")
+  const resetButton = document.getElementById("btnReset")
+  const scoreSpan = document.getElementById("score")
   // quizArray QUESTIONS & ANSWERS
   // q = QUESTION, o = OPTIONS, a = CORRECT ANSWER
   // Basic ideas from https://code-boxx.com/simple-javascript-quiz/
@@ -77,7 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const calculateScore = () => {
     let score = 0;
     quizArray.map((quizItem, index) => {
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 4; i++) {
         //highlight the li if it is the correct answer
         let li = `li_${index}_${i}`;
         let r = `radio_${index}_${i}`;
@@ -96,6 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     })
     console.log(score);
+
 
 
   submitButton.addEventListener("click", ()=>calculateScore())
