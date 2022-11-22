@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let seconds = 60;
     let timer = setInterval(myTimer, 1000)
     function myTime(){
-      document.getElementById("time").innerHTML = `Seconds remaining: ${seconds}`
+      document.getElementById("time").innerHTML = `${seconds} seconds`
       seconds--
       if (seconds === -1){
         clearInterval(timer)
