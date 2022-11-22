@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       }
     })
-    score.innerHTML = `Your score is: ${score}/5`
+    scoreSpan.innerHTML = `Your score is: ${score}/5`
   };
 
   const countDown = () => {
