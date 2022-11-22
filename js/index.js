@@ -110,4 +110,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // call the displayQuiz function
   displayQuiz();
-});
