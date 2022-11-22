@@ -96,10 +96,10 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     })
     console.log(score);
-  };
+
 
   submitButton.addEventListener("click", ()=>calculateScore())
 
   // call the displayQuiz function
   displayQuiz();
-});
+
