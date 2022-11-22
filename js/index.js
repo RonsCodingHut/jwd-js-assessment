@@ -101,12 +101,21 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log(score);
   };
 
+  const countDown = () => {
+    let seconds = 60;
+    let timer = setInterval(myTimer, 1000)
+    function myTime(){
+      document.getElementById("time").innerHTML = `Seconds remaining ${seconds}`
+    }
+  }
+
   const resetPage = () => {
     window.location.reload();
   }
 
   submitButton.addEventListener("click", ()=>calculateScore());
-  resetButton.addEventListener("click"), ()=>resetPage())
+  resetButton.addEventListener("click"), ()=>resetPage());
 
   // call the displayQuiz function
   displayQuiz();
+
