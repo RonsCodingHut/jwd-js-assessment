@@ -22,10 +22,11 @@
 window.addEventListener('DOMContentLoaded', () => {
   const start = document.querySelector('#start');
   start.addEventListener('click', function (e) {
-    document.querySelector('#quizBlock').style.display = 'block';
-    start.style.display = 'none';
-    countDown();
+  document.querySelector('#quizBlock').style.display = 'block';
+  start.style.display = 'none';
+  countDown();
   });
+
   const submitButton = document.getElementById("btnSumit")
   const resetButton = document.getElementById("btnReset")
   const scoreSpan = document.getElementById("score")
